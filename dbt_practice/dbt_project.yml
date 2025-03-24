@@ -32,4 +32,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_practice:
     staging:
+      +schema: jelte_stg_calls
       +materialized: table
+    intermediate:
+      +schema: jelte_int_calls
+      +materialized: table
+    

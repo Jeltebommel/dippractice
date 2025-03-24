@@ -1,6 +1,6 @@
 {{ config(
     materialized='table',
-    schema='jelte'
+    schema='jelte_stg_calls'
 ) }}
 
 WITH raw AS (

@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: jelte_raw            
-    database: hive_metastore
-    schema: jelte_raw
-    tables:
-      - name: d_agent_by_skillset_stat
-      - name: medewerkerslijst

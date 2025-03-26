@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: jelte_raw              # must match the first argument in source('jelte_raw','customers')
+    database: hive_metastore     # or your Databricks catalog name, if you have one
+    schema: jelte_raw            # your raw schema name
+    tables:
+      - name: customers          # must match the second argument in source('jelte_raw','customers')
